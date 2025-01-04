@@ -1,4 +1,4 @@
 # Minesweeper
  지뢰찾기
  
-{% include video id="Z91ImRvm7j4" provider="youtube"%}
+[유튜브 영상][https://youtu.be/Z91ImRvm7j4]
