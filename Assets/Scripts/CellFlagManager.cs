@@ -79,8 +79,8 @@ public class CellFlagManager : MonoBehaviour
         lr = cell.AddComponent<LineRenderer>();
         lr.sortingOrder = 51;
         lr.positionCount = 2;
-        lr.startWidth = 0.1f; // Ω√¿€¡° ±Ω±‚
-        lr.endWidth = 0.1f;   // ≥°¡° ±Ω±‚
+        lr.startWidth = 0.1f;
+        lr.endWidth = 0.1f;
         lr.material = lineMaterial;
         Vector3 pos = cell.transform.position;
         pos.z = -5;
