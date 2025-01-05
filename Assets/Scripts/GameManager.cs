@@ -11,16 +11,16 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Transform firstCellPos;
     //[SerializeField] private Transform lastCellPos;
     //
-    [SerializeField] private Sprite[] numbers;//¼¿ ±ÙÃ³ 8Ä­¿¡ ÀÖ´Â ÆøÅº °³¼ö°¡ ÀûÇôÀÖ´Â ÀÌ¹ÌÁö
-    [SerializeField] private int bombCount;//°ÔÀÓ ³»¿¡ ÀÖ´Â ÆøÅº °³¼ö
+    [SerializeField] private Sprite[] numbers;//ì…€ ê·¼ì²˜ 8ì¹¸ì— ìˆëŠ” í­íƒ„ ê°œìˆ˜ê°€ ì í˜€ìˆëŠ” ì´ë¯¸ì§€
+    [SerializeField] private int bombCount;//ê²Œì„ ë‚´ì— ìˆëŠ” í­íƒ„ ê°œìˆ˜
     [SerializeField] private Text timerText;
     [SerializeField] private GameObject gameEndPanel;
-    [SerializeField] private Text gameEndText;//game over ¿©ºÎ¿¡µû¶ó ÅØ½ºÆ®°¡ ´Ş¶óÁü
-    [SerializeField] private FadeManager fadeObject;//game over ¿©ºÎ¿¡µû¶ó ÅØ½ºÆ®°¡ ´Ş¶óÁü
+    [SerializeField] private Text gameEndText;//game over ì—¬ë¶€ì—ë”°ë¼ í…ìŠ¤íŠ¸ê°€ ë‹¬ë¼ì§
+    [SerializeField] private FadeManager fadeObject;
     private List<Vector2Int> bombLocations = new List<Vector2Int>();
     private WaitForSeconds autoFindDelays;
     private WaitForSeconds timer;
-    [HideInInspector] public int openCellCount;//¼¿ÀÌ ¿­¸±¶§¸¶´Ù 1¾¿ Áõ°¡
+    [HideInInspector] public int openCellCount;//ì…€ì´ ì—´ë¦´ë•Œë§ˆë‹¤ 1ì”© ì¦ê°€
     public bool IsGameEnd { get; private set; }
     private void Awake()
     {
@@ -218,7 +218,7 @@ public class GameManager : MonoBehaviour
 
     private void Init()
     { 
-        // Áö·Ú¸¦ ·£´ıÇÏ°Ô ¹èÄ¡
+        // ì§€ë¢°ë¥¼ ëœë¤í•˜ê²Œ ë°°ì¹˜
         for (int i = 0; i < bombCount; i++)
         {
             int row, col;
